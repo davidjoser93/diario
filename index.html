@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revista Digital</title>
+
+    <link href="assets/css/dflip.min.css" rel="stylesheet" type="text/css">
+    
+    <link href="assets/css/themify-icons.min.css" rel="stylesheet" type="text/css">
+
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            background-color: #2b2b2b;
+            overflow: hidden; 
+        }
+        .contenedor-revista {
+            height: 100vh;
+            width: 100vw;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor-revista">
+        <div class="_df_book" 
+             id="mi_revista"
+             source="prueba.pdf" 
+             option-webgl="true" 
+             option-hard="cover"
+             option-background-color="#2b2b2b">
+             </div>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+
+    <script>
+        // CAMBIO 4: Configuración de la ubicación base.
+        // Al poner "assets/", el script buscará automáticamente:
+        // assets/sound/ (para los audios)
+        // assets/js/libs/ (para three.js si lo requiere)
+        // assets/images/ (para texturas)
+        var dFlipLocation = "assets/";
+    </script>
+
+    <script src="assets/js/dflip.min.js"></script>
+
+</body>
+</html>
